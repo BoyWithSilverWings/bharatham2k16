@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+	<script>
+		var config = {
+    	apiKey: "AIzaSyDurIg4ju49jQx_e5iKBLLbjTn3Q2SYPAk",
+    	authDomain: "bharatham-125d6.firebaseapp.com",
+    	databaseURL: "https://bharatham-125d6.firebaseio.com",
+    	storageBucket: "bharatham-125d6.appspot.com",
+  		};
+  		firebase.initializeApp(config);
+		firebase.auth().signInWithEmailAndPassword('vikings@bharatham2k16.in', 'jovinbabu').catch(function(error) {
+			  // Handle Errors here.
+
+			  var errorCode = error.code;
+			  var errorMessage = error.message;
+			  console.log(errorCode);
+		});
+		firebase.auth().onAuthStateChanged(function(user) {
+			if (user) {
+		    	// User is signed in
+		    	user.updateProfile({
+				  displayName: "Vikings",
+				}).then(function() {
+				  // Update successful.
+				}, function(error) {
+				  // An error happened.
+				}); 
+			} else {
+		    // No user is signed in.
+		    console.log("No One");
+		  	}
+		});
+		firebase.auth().signOut().then(function() {
+		  	// Sign-out successful.
+		  	console.log("Sign Out Succesful!");
+		  	
+			}, function(error) {
+		  	// An error happened.
+			}
+		);		
+	</script>
+</head>
+<body>
+
+</body>
