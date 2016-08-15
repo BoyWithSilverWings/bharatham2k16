@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="Results - Bharatham 2k16">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>	
+<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+
+
+    
+
+	<title>Gallery - Bharatham 2k16</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/component.css">
+	
+  	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/vegas.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/gallery.css">
+	<script src="js/gallery.js" ></script>
+  <script src="https://cdn.rawgit.com/vast-engineering/jquery-popup-overlay/1.7.13/jquery.popupoverlay.js"></script>
+	<!-- Google web font  -->
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+	<style>
+		html {
+			font-family: 'Source Sans Pro', sans-serif;
+			text-align: center;
+		}
+		.container {
+			margin-top: 50px;
+		}
+		p {
+			margin: 60px;
+		}
+	</style>
+	
+	
+  <script>
+    $(document).ready(function() {
+
+      // Initialize the plugin
+      $('#my_popup').popup();
+
+    });
+  </script>
+</head>
+<body>
+	<div class="container">
+		<h1>GALLERY</h1>
+		<hr>
+		<div class="menu-container">
+		  <!-- Add content to the popup -->
+  <div id="my_popup">
+
+  <img id="selected-image" src=""/>
+
+    <!-- Add an optional button to close the popup -->
+    <button class="my_popup_close">Close</button>
+
+  </div>
+
+		
+		<div class="menu" onclick="load_pics('student_art_works/','Student\'s Art Work');"><img src="images/Artwork.jpg" class="img-fix" /><div class="menu-title" >Students Art Work</div></div>
+		<div class="menu"onclick="load_pics('','Launch Photos');"><img src="images/roket.png" class="img-fix"/><div class="menu-title">Launch Photos</div></div>
+		</div>
+		<hr>
+		<div class="gallery-container">
+		<div id="gallery-title" class="hide gallery-title" ></div>
+	<div id="gallery-header" class="hide gallery-header" ><img class="img-fix" src="images/flower.png"/></div>
+		<div class="hide" id="message" ><span style="font-size:35px">COMING SOON</span></div>
+		
+		<div id="gall" class="hide">
+		
+		
+		<div class="loader-overlay">
+	  	<div class="circle"></div>
+		<div class="circle"></div>
+		  <div class="circle"></div>
+		</div>
+		
+		
+		
+		
+		
+		</div>
+		
+		
+		
+		
+	</div>	
+	
+		
+		
+		</div>
+		
+		
+	</div>
+	
+<!-- Footer section -->
+
+<footer style="margin-top:40%;">
+	<div class="container">
+    
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+            
+                <ul class="social-icon"> 
+                    <li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.2s"></a></li>
+                    <!--<li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="0.4s"></a></li>
+                    <li><a href="#" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
+                    <li><a href="#" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.8s"></a></li>
+                    <li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="1.0s"></a></li>-->
+                </ul>
+				<p class="wow fadeInUp" data-wow-delay="1s" >&copy; Bharatham 2016</p>
+                
+			</div>
+			
+		</div>
+        
+	</div>
+</footer>
+</body>
